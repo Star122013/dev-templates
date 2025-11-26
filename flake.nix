@@ -39,7 +39,6 @@
             programs.nixfmt.package = pkgs.nixfmt-rfc-style;
             programs.jsonfmt.enable = true;
           };
-
         };
       flake = {
         templates = rec {
@@ -54,6 +53,12 @@
             path = ./templates/cpp;
             description = ''
               A basic cpp devShell with cmake.
+            '';
+          };
+          md = {
+            path = ./templates/md;
+            description = ''
+              A basic markdown devShell.
             '';
           };
         };
