@@ -55,6 +55,13 @@
               A basic cpp devShell with cmake.
             '';
           };
+          rust = {
+            path = ./templates/rust;
+            description = ''
+              A basic rust devShell with rust-overlay.
+            '';
+          };
+
           md = {
             path = ./templates/md;
             description = ''
