@@ -68,6 +68,12 @@
               A basic markdown devShell.
             '';
           };
+          zig = {
+            path = ./templates/zig;
+            description = ''
+              A basic zig devShell using zig-overlay
+            '';
+          };
         };
       };
     };
