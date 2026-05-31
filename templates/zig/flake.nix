@@ -20,12 +20,12 @@
         "x86_64-darwin"
       ];
       perSystem =
-        { pkgs, ... }:
+        { pkgs, system, ... }:
         {
           devShells.default = pkgs.mkShellNoCC {
             name = "nix devShell";
             buildInputs = with pkgs; [
-              zig.packages."0.16.0"
+              zig.packages.${system}."0.16.0"
               zls
               zig-zlint
             ];
